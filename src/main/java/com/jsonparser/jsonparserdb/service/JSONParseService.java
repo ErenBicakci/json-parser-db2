@@ -22,7 +22,6 @@ public class JSONParseService {
     public void parse() throws Exception{
         int sayac = 0;
         for (int y = 13;y < 51;y++){
-            System.out.println(y);
             JSONParser jsonParser = new JSONParser();
 
             //Dosya konumunuzu kendi bilgisayarınıza göre ayarlamanız yeterlidir
@@ -42,7 +41,7 @@ public class JSONParseService {
                 eClassEntity.setDescription(totalValue);
                 eClassRepository.save(eClassEntity);
 
-                sayac++;
+
             }
         }
 
